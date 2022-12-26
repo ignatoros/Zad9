@@ -1,0 +1,87 @@
+﻿<Window x:Class="Zad9.SellerFolder.SellerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zad9.SellerFolder"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+       
+        AllowsTransparency="False"
+        ResizeMode="CanResizeWithGrip" 
+        Height="750" Width="1200"
+         MinHeight="750" MinWidth="1200"
+         MaxHeight="750" MaxWidth="1200">
+    
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Border />
+            
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="300"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                   
+                    <StackPanel Grid.Row="1">
+                    <Button x:Name="ListSellerBtn" Width="260" Click="ListSellerBtn_Click">
+
+                        <StackPanel Orientation="Horizontal">
+                            
+
+                            
+                            <TextBlock Text="Список риелторов"/>
+                        </StackPanel>
+
+                    </Button>
+
+                    <Button x:Name="AddSellerBtn" Width="260" Click="AddSellerBtn_Click">
+                            <StackPanel Orientation="Horizontal">
+                               
+                                <TextBlock Text="Добавить риелтора" />
+                            </StackPanel>
+
+                        </Button>
+                        
+                       
+
+                    </StackPanel>
+                    <Button x:Name="ExitBtn" Width="260"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Bottom"
+                            Grid.Row="1"
+                            >
+                        <StackPanel Orientation="Horizontal">
+                           
+                            <TextBlock Text="Выйти"
+                                       />
+
+
+
+                        </StackPanel>
+                    </Button>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    
+
+
+                </Grid>
+            </Grid>
+        </Grid>
+   
+</Window>
+
